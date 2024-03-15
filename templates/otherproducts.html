@@ -1,0 +1,84 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>𝕺𝖙𝖍𝖊𝖗 𝖕𝖗𝖔𝖉𝖚𝖈𝖙𝖘</title>
+    <style>
+        body {
+            background-image: url("{% static 'background.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .image {
+            display: flex;
+            gap: 10rem;
+            margin-left: 5%;
+            margin-bottom: 10%;
+            width: 80%;
+        }
+        .image img {
+            width: 200px;
+            height: auto;
+        }
+        .product-button {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-left:20px;
+            border-radius:10px;
+            width:80%;
+        }
+        .product-button:hover {
+            background-color: green;
+        }
+        .hand{
+          text-align:center;
+          color:green;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="Hand">Ｈａｎｄｐｉｃｋｅｄ ｆｏｒ ｙｏｕ</h1>
+    <div class="image">
+        <a href="{% url 'product1' %}">
+            <img src="{% static 'infantfood.jpg' %}" alt="Infant Food">
+             <button class="product-button">𝖡𝖴𝖸</button>
+        </a>
+        <a href="{% url 'product2' %}">
+            <img src="{% static 'choclates.jpg' %}" alt="Chocolates">
+            <button class="product-button">𝖡𝖴𝖸</button>
+        </a>
+        <a href="{% url 'product3' %}">
+            <img src="{% static 'milkuht.jpg' %}" alt="Milk Uht">
+            <button class="product-button">𝖡𝖴𝖸</button>
+        </a>
+        <a href="{% url 'product4' %}">
+            <img src="{% static 'sweets.jpg' %}" alt="Sweets">
+             <button class="product-button">𝖡𝖴𝖸</button>
+        </a>
+    </div>
+    <div class="image">
+        <a href="{% url 'product5' %}">
+            <img src="{% static 'whippingcream.jpg' %}" alt="Whipping Cream">
+            <button class="product-button">𝖡𝖴𝖸</button>
+        </a>
+        <a href="{% url 'product6' %}">
+            <img src="{% static 'milkpowders.jpg' %}" alt="Milk Powders">
+            <button class="product-button">𝖡𝖴𝖸</button>
+        </a>
+        <a href="{% url 'product7' %}">
+            <img src="{% static 'ghee.jpg' %}" alt="Ghee">
+            <button class="button product-button">𝖡𝖴𝖸</button>
+        </a>
+        <a href="{% url 'product8' %}">
+            <img src="{% static 'beverages.jpg' %}" alt="Beverages">
+            <button class="product-button">𝖡𝖴𝖸</button>
+        </a>
+    </div>
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,114 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INFANT FOOD</title>
+    <style>
+         .product1 {
+            width: 200%;
+            max-width: 700px; /* Set a maximum width to maintain image quality */
+            display: block; /* Ensures image behaves as a block element */
+            margin: 0 auto; /* Centers the image horizontally */
+            border-radius:50px;
+
+        }
+         p {
+         margin-top:10px;
+            color: black; /* You can replace "blue" with any other color you prefer */
+        }
+         body {
+            background-image: url("{% static 'back5.jpg' %}");
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+        }
+        /* Form styling */
+.order-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+ <h1 style="text-align:center">𝓦𝓱𝓲𝓹𝓹𝓲𝓷𝓰 𝓬𝓻𝓮𝓪𝓶 </h1>
+<img src="{% static 'product5.1.jpg'%}" class="product1">
+<p> 𝔚𝔥𝔦𝔭𝔭𝔦𝔫𝔤 𝔠𝔯𝔢𝔞𝔪, 𝔞 𝔳𝔢𝔯𝔰𝔞𝔱𝔦𝔩𝔢 𝔡𝔞𝔦𝔯𝔶 𝔭𝔯𝔬𝔡𝔲𝔠𝔱, 𝔞𝔡𝔡𝔰 𝔯𝔦𝔠𝔥𝔫𝔢𝔰𝔰 𝔞𝔫𝔡 𝔦𝔫𝔡𝔲𝔩𝔤𝔢𝔫𝔠𝔢 𝔱𝔬 𝔞 𝔳𝔞𝔯𝔦𝔢𝔱𝔶 𝔬𝔣 𝔠𝔲𝔩𝔦𝔫𝔞𝔯𝔶 𝔠𝔯𝔢𝔞𝔱𝔦𝔬𝔫𝔰. 𝔇𝔢𝔯𝔦𝔳𝔢𝔡 𝔣𝔯𝔬𝔪 𝔱𝔥𝔢 𝔥𝔦𝔤𝔥-𝔣𝔞𝔱
+    𝔠𝔬𝔫𝔱𝔢𝔫𝔱 𝔬𝔣 𝔠𝔬𝔴'𝔰 𝔪𝔦𝔩𝔨, 𝔴𝔥𝔦𝔭𝔭𝔦𝔫𝔤 𝔠𝔯𝔢𝔞𝔪 𝔦𝔰 𝔞 𝔰𝔱𝔞𝔭𝔩𝔢 𝔦𝔫𝔤𝔯𝔢𝔡𝔦𝔢𝔫𝔱 𝔦𝔫 𝔟𝔬𝔱𝔥 𝔰𝔴𝔢𝔢𝔱 𝔞𝔫𝔡 𝔰𝔞𝔳𝔬𝔯𝔶 𝔡𝔦𝔰𝔥𝔢𝔰. 𝔗𝔬 𝔞𝔠𝔥𝔦𝔢𝔳𝔢 𝔱𝔥𝔢 𝔭𝔢𝔯𝔣𝔢𝔠𝔱 𝔴𝔥𝔦𝔭𝔭𝔢𝔡 𝔱𝔢𝔵𝔱𝔲𝔯𝔢,
+    𝔱𝔥𝔢 𝔠𝔯𝔢𝔞𝔪 𝔲𝔫𝔡𝔢𝔯𝔤𝔬𝔢𝔰 𝔞 𝔭𝔯𝔬𝔠𝔢𝔰𝔰 𝔬𝔣 𝔞𝔢𝔯𝔞𝔱𝔦𝔬𝔫, 𝔴𝔥𝔢𝔯𝔢 𝔞𝔦𝔯 𝔦𝔰 𝔦𝔫𝔠𝔬𝔯𝔭𝔬𝔯𝔞𝔱𝔢𝔡 𝔦𝔫𝔱𝔬 𝔦𝔱𝔰 𝔰𝔱𝔯𝔲𝔠𝔱𝔲𝔯𝔢 𝔱𝔬 𝔠𝔯𝔢𝔞𝔱𝔢 𝔞 𝔩𝔦𝔤𝔥𝔱 𝔞𝔫𝔡 𝔣𝔩𝔲𝔣𝔣𝔶 𝔠𝔬𝔫𝔰𝔦𝔰𝔱𝔢𝔫𝔠𝔶. 𝔗𝔥𝔦𝔰 𝔭𝔯𝔬𝔠𝔢𝔰𝔰
+    𝔦𝔰 𝔠𝔬𝔪𝔪𝔬𝔫𝔩𝔶 𝔞𝔠𝔥𝔦𝔢𝔳𝔢𝔡 𝔲𝔰𝔦𝔫𝔤 𝔞 𝔴𝔥𝔦𝔰𝔨, 𝔢𝔩𝔢𝔠𝔱𝔯𝔦𝔠 𝔪𝔦𝔵𝔢𝔯, 𝔬𝔯 𝔢𝔳𝔢𝔫 𝔞 𝔟𝔩𝔢𝔫𝔡𝔢𝔯, 𝔴𝔦𝔱𝔥 𝔱𝔥𝔢 𝔠𝔯𝔢𝔞𝔪 𝔟𝔢𝔠𝔬𝔪𝔦𝔫𝔤 𝔱𝔥𝔦𝔠𝔨𝔢𝔯 𝔞𝔫𝔡 𝔤𝔞𝔦𝔫𝔦𝔫𝔤 𝔳𝔬𝔩𝔲𝔪𝔢 𝔞𝔰 𝔦𝔱 𝔦𝔰 𝔴𝔥𝔦𝔭𝔭𝔢𝔡
+    . 𝔗𝔥𝔢 𝔯𝔢𝔰𝔲𝔩𝔱 𝔦𝔰 𝔞 𝔩𝔲𝔵𝔲𝔯𝔦𝔬𝔲𝔰 𝔱𝔬𝔭𝔭𝔦𝔫𝔤 𝔦𝔡𝔢𝔞𝔩 𝔣𝔬𝔯 𝔡𝔢𝔰𝔰𝔢𝔯𝔱𝔰 𝔩𝔦𝔨𝔢 𝔠𝔞𝔨𝔢𝔰, 𝔭𝔦𝔢𝔰, 𝔞𝔫𝔡 𝔣𝔯𝔲𝔦𝔱 𝔰𝔞𝔩𝔞𝔡𝔰, 𝔞𝔰 𝔴𝔢𝔩𝔩 𝔞𝔰 𝔰𝔞𝔳𝔬𝔯𝔶 𝔡𝔦𝔰𝔥𝔢𝔰 𝔩𝔦𝔨𝔢 𝔰𝔬𝔲𝔭𝔰, 𝔰𝔞𝔲𝔠𝔢𝔰, 𝔞𝔫𝔡
+    𝔭𝔞𝔰𝔱𝔞.  𝔚𝔥𝔦𝔭𝔭𝔦𝔫𝔤 𝔠𝔯𝔢𝔞𝔪'𝔰 𝔳𝔢𝔯𝔰𝔞𝔱𝔦𝔩𝔦𝔱𝔶 𝔢𝔵𝔱𝔢𝔫𝔡𝔰 𝔟𝔢𝔶𝔬𝔫𝔡 𝔦𝔱𝔰 𝔯𝔬𝔩𝔢 𝔞𝔰 𝔞 𝔱𝔬𝔭𝔭𝔦𝔫𝔤, 𝔞𝔰 𝔦𝔱 𝔰𝔢𝔯𝔳𝔢𝔰 𝔞𝔰 𝔞 𝔠𝔯𝔲𝔠𝔦𝔞𝔩 𝔠𝔬𝔪𝔭𝔬𝔫𝔢𝔫𝔱 𝔦𝔫 𝔪𝔞𝔫𝔶 𝔯𝔢𝔠𝔦𝔭𝔢𝔰, 𝔢𝔫𝔥𝔞𝔫𝔠𝔦𝔫𝔤
+    𝔟𝔬𝔱𝔥 𝔱𝔢𝔵𝔱𝔲𝔯𝔢 𝔞𝔫𝔡 𝔣𝔩𝔞𝔳𝔬𝔯. ℑ𝔱𝔰 𝔥𝔦𝔤𝔥-𝔣𝔞𝔱 𝔠𝔬𝔫𝔱𝔢𝔫𝔱 𝔞𝔩𝔩𝔬𝔴𝔰 𝔦𝔱 𝔱𝔬 𝔰𝔱𝔞𝔟𝔦𝔩𝔦𝔷𝔢 𝔴𝔥𝔢𝔫 𝔴𝔥𝔦𝔭𝔭𝔢𝔡, 𝔥𝔬𝔩𝔡𝔦𝔫𝔤 𝔦𝔱𝔰 𝔰𝔥𝔞𝔭𝔢 𝔣𝔬𝔯 𝔢𝔵𝔱𝔢𝔫𝔡𝔢𝔡 𝔭𝔢𝔯𝔦𝔬𝔡𝔰, 𝔪𝔞𝔨𝔦𝔫𝔤 𝔦𝔱 𝔞𝔫 𝔢𝔵𝔠𝔢𝔩𝔩𝔢𝔫𝔱
+    𝔟𝔞𝔰𝔢 𝔣𝔬𝔯 𝔪𝔬𝔲𝔰𝔰𝔢𝔰, 𝔠𝔯𝔢𝔞𝔪𝔰, 𝔞𝔫𝔡 𝔣𝔯𝔬𝔰𝔱𝔦𝔫𝔤𝔰. 𝔄𝔡𝔡𝔦𝔱𝔦𝔬𝔫𝔞𝔩𝔩𝔶, 𝔴𝔥𝔦𝔭𝔭𝔦𝔫𝔤 𝔠𝔯𝔢𝔞𝔪 𝔠𝔞𝔫 𝔟𝔢 𝔦𝔫𝔣𝔲𝔰𝔢𝔡 𝔴𝔦𝔱𝔥 𝔳𝔞𝔯𝔦𝔬𝔲𝔰 𝔣𝔩𝔞𝔳𝔬𝔯𝔰 𝔰𝔲𝔠𝔥 𝔞𝔰 𝔳𝔞𝔫𝔦𝔩𝔩𝔞, 𝔠𝔥𝔬𝔠𝔬𝔩𝔞𝔱𝔢, 𝔬𝔯 𝔠𝔦𝔱𝔯𝔲𝔰
+    𝔷𝔢𝔰𝔱, 𝔣𝔲𝔯𝔱𝔥𝔢𝔯 𝔢𝔩𝔢𝔳𝔞𝔱𝔦𝔫𝔤 𝔱𝔥𝔢 𝔱𝔞𝔰𝔱𝔢 𝔭𝔯𝔬𝔣𝔦𝔩𝔢 𝔬𝔣 𝔡𝔦𝔰𝔥𝔢𝔰.𝔚𝔥𝔢𝔱𝔥𝔢𝔯 𝔲𝔰𝔢𝔡 𝔱𝔬 𝔞𝔡𝔬𝔯𝔫 𝔞 𝔡𝔢𝔠𝔞𝔡𝔢𝔫𝔱 𝔰𝔩𝔦𝔠𝔢 𝔬𝔣 𝔠𝔞𝔨𝔢 𝔬𝔯 𝔦𝔫𝔠𝔬𝔯𝔭𝔬𝔯𝔞𝔱𝔢𝔡 𝔦𝔫𝔱𝔬 𝔞 𝔰𝔞𝔳𝔬𝔯𝔶 𝔰𝔞𝔲𝔠𝔢, 𝔴𝔥𝔦𝔭𝔭𝔦𝔫𝔤 𝔠𝔯𝔢𝔞𝔪
+    𝔯𝔢𝔪𝔞𝔦𝔫𝔰 𝔞 𝔟𝔢𝔩𝔬𝔳𝔢𝔡 𝔦𝔫𝔤𝔯𝔢𝔡𝔦𝔢𝔫𝔱 𝔠𝔥𝔢𝔯𝔦𝔰𝔥𝔢𝔡 𝔣𝔬𝔯 𝔦𝔱𝔰 𝔞𝔟𝔦𝔩𝔦𝔱𝔶 𝔱𝔬 𝔱𝔯𝔞𝔫𝔰𝔣𝔬𝔯𝔪 𝔬𝔯𝔡𝔦𝔫𝔞𝔯𝔶 𝔡𝔦𝔰𝔥𝔢𝔰 𝔦𝔫𝔱𝔬 𝔢𝔵𝔱𝔯𝔞𝔬𝔯𝔡𝔦𝔫𝔞𝔯𝔶 𝔠𝔲𝔩𝔦𝔫𝔞𝔯𝔶 </p>
+<h2 style="text-align:center">Order Now</h2>
+  <form action="bproducts" method="post" class="order-form">
+           {% csrf_token %}
+    <label for="product" class="form-label">Select Product:</label>
+  <select id="product" name="product" required class="form-input">
+    <option value="product1" selected >INFANT FOOD</option>
+    <option value="product2">CHOCLATES</option>
+    <option value="product3">SWEETS</option>
+    <option value="product4">CHOCLATES</option>
+    <option value="product5">MILK-UHT</option>
+    <option value="product6">WHIPPING CREAM</option>
+    <option value="product7">MILK POWDERS</option>
+    <option value="product8">GHEE</option>
+    <option value="product9">BEVERAGES</option>
+  </select><br>
+
+  <label for="quantity" class="form-label">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" required class="form-input"><br>
+
+  <label for="name" class="form-label">Customer Name:</label>
+  <input type="text" id="name" name="name" required class="form-input"><br>
+
+  <label for="address" class="form-label">Address:</label>
+  <textarea id="address" name="address" rows="4" cols="50" required class="form-input"></textarea><br>
+
+  <label for="phone" class="form-label">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required class="form-input"><br>
+
+  <button type="submit" class="submit-button">Submit Order</button>
+</form>
+
+</body>
+{% endblock %}
+</html>

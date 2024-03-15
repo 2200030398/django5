@@ -1,0 +1,114 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INFANT FOOD</title>
+    <style>
+         .product1 {
+            width: 200%;
+            max-width: 700px; /* Set a maximum width to maintain image quality */
+            display: block; /* Ensures image behaves as a block element */
+            margin: 0 auto; /* Centers the image horizontally */
+            border-radius:50px;
+
+        }
+         p {
+         margin-top:10px;
+            color:  RGB(0, 128, 0) /* You can replace "blue" with any other color you prefer */
+        }
+         body {
+            background-image: url("{% static 'back4.jpg' %}");
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+        }
+        /* Form styling */
+.order-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+ <h1 style="text-align:center">SWEETS- </h1>
+<img src="{% static 'product4.1.jpg'%}" class="product1">
+<p> ❀ꗥ～ꗥ❀ 𝐈𝐧𝐝𝐢𝐚𝐧 𝐜𝐮𝐢𝐬𝐢𝐧𝐞 𝐛𝐨𝐚𝐬𝐭𝐬 𝐚 𝐫𝐢𝐜𝐡 𝐯𝐚𝐫𝐢𝐞𝐭𝐲 𝐨𝐟 𝐬𝐰𝐞𝐞𝐭𝐬 𝐜𝐫𝐚𝐟𝐭𝐞𝐝 𝐟𝐫𝐨𝐦 𝐦𝐢𝐥𝐤, 𝐫𝐞𝐟𝐥𝐞𝐜𝐭𝐢𝐧𝐠 𝐭𝐡𝐞 𝐧𝐚𝐭𝐢𝐨𝐧'𝐬 𝐜𝐮𝐥𝐢𝐧𝐚𝐫𝐲 𝐝𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲 𝐚𝐧𝐝
+    𝐜𝐮𝐥𝐭𝐮𝐫𝐚𝐥 𝐡𝐞𝐫𝐢𝐭𝐚𝐠𝐞. 𝐎𝐧𝐞 𝐬𝐮𝐜𝐡 𝐢𝐜𝐨𝐧𝐢𝐜 𝐝𝐞𝐥𝐢𝐜𝐚𝐜𝐲 𝐢𝐬 "𝐑𝐚𝐬𝐠𝐮𝐥𝐥𝐚," 𝐨𝐫𝐢𝐠𝐢𝐧𝐚𝐭𝐢𝐧𝐠 𝐟𝐫𝐨𝐦 𝐭𝐡𝐞 𝐞𝐚𝐬𝐭𝐞𝐫𝐧 𝐬𝐭𝐚𝐭𝐞 𝐨𝐟 𝐖𝐞𝐬𝐭 𝐁𝐞𝐧𝐠𝐚𝐥. 𝐓𝐡𝐞𝐬𝐞 𝐬𝐨𝐟𝐭
+    , 𝐬𝐩𝐨𝐧𝐠𝐲 𝐛𝐚𝐥𝐥𝐬 𝐨𝐟 𝐜𝐨𝐭𝐭𝐚𝐠𝐞 𝐜𝐡𝐞𝐞𝐬𝐞 𝐚𝐫𝐞 𝐬𝐢𝐦𝐦𝐞𝐫𝐞𝐝 𝐢𝐧 𝐚 𝐬𝐮𝐠𝐚𝐫 𝐬𝐲𝐫𝐮𝐩 𝐢𝐧𝐟𝐮𝐬𝐞𝐝 𝐰𝐢𝐭𝐡 𝐜𝐚𝐫𝐝𝐚𝐦𝐨𝐦, 𝐫𝐨𝐬𝐞 𝐰𝐚𝐭𝐞𝐫, 𝐨𝐫 𝐬𝐚𝐟𝐟𝐫𝐨𝐧,
+    𝐢𝐦𝐩𝐚𝐫𝐭𝐢𝐧𝐠 𝐚 𝐟𝐥𝐨𝐫𝐚𝐥 𝐚𝐫𝐨𝐦𝐚 𝐚𝐧𝐝 𝐚 𝐝𝐞𝐥𝐢𝐠𝐡𝐭𝐟𝐮𝐥 𝐬𝐰𝐞𝐞𝐭𝐧𝐞𝐬𝐬. 𝐑𝐚𝐬𝐠𝐮𝐥𝐥𝐚𝐬 𝐚𝐫𝐞 𝐜𝐡𝐞𝐫𝐢𝐬𝐡𝐞𝐝 𝐟𝐨𝐫 𝐭𝐡𝐞𝐢𝐫 𝐦𝐞𝐥𝐭-𝐢𝐧-𝐭𝐡𝐞-𝐦𝐨𝐮𝐭𝐡 𝐭𝐞𝐱𝐭𝐮𝐫𝐞 𝐚𝐧𝐝
+    𝐚𝐫𝐞 𝐨𝐟𝐭𝐞𝐧 𝐬𝐞𝐫𝐯𝐞𝐝 𝐜𝐡𝐢𝐥𝐥𝐞𝐝, 𝐦𝐚𝐤𝐢𝐧𝐠 𝐭𝐡𝐞𝐦 𝐚 𝐫𝐞𝐟𝐫𝐞𝐬𝐡𝐢𝐧𝐠 𝐭𝐫𝐞𝐚𝐭 𝐝𝐮𝐫𝐢𝐧𝐠 𝐟𝐞𝐬𝐭𝐢𝐯𝐚𝐥𝐬 𝐚𝐧𝐝 𝐜𝐞𝐥𝐞𝐛𝐫𝐚𝐭𝐢𝐨𝐧𝐬 𝐚𝐜𝐫𝐨𝐬𝐬 𝐈𝐧𝐝𝐢𝐚.𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐛𝐞𝐥𝐨𝐯𝐞𝐝
+    𝐦𝐢𝐥𝐤-𝐛𝐚𝐬𝐞𝐝 𝐬𝐰𝐞𝐞𝐭 𝐢𝐬 "𝐊𝐚𝐥𝐚𝐤𝐚𝐧𝐝," 𝐚 𝐜𝐨𝐧𝐟𝐞𝐜𝐭𝐢𝐨𝐧 𝐡𝐚𝐢𝐥𝐢𝐧𝐠 𝐟𝐫𝐨𝐦 𝐭𝐡𝐞 𝐧𝐨𝐫𝐭𝐡𝐞𝐫𝐧 𝐫𝐞𝐠𝐢𝐨𝐧𝐬 𝐨𝐟 𝐈𝐧𝐝𝐢𝐚. 𝐓𝐡𝐢𝐬 𝐢𝐧𝐝𝐮𝐥𝐠𝐞𝐧𝐭 𝐝𝐞𝐬𝐬𝐞𝐫𝐭 𝐢𝐬 𝐦𝐚𝐝𝐞
+    𝐛𝐲 𝐫𝐞𝐝𝐮𝐜𝐢𝐧𝐠 𝐦𝐢𝐥𝐤 𝐮𝐧𝐭𝐢𝐥 𝐢𝐭 𝐭𝐡𝐢𝐜𝐤𝐞𝐧𝐬 𝐚𝐧𝐝 𝐟𝐨𝐫𝐦𝐬 𝐚 𝐟𝐮𝐝𝐠𝐲 𝐜𝐨𝐧𝐬𝐢𝐬𝐭𝐞𝐧𝐜𝐲, 𝐰𝐡𝐢𝐜𝐡 𝐢𝐬 𝐭𝐡𝐞𝐧 𝐟𝐥𝐚𝐯𝐨𝐫𝐞𝐝 𝐰𝐢𝐭𝐡 𝐬𝐮𝐠𝐚𝐫, 𝐜𝐚𝐫𝐝𝐚𝐦𝐨𝐦, 𝐚𝐧𝐝
+    𝐬𝐨𝐦𝐞𝐭𝐢𝐦𝐞𝐬 𝐠𝐚𝐫𝐧𝐢𝐬𝐡𝐞𝐝 𝐰𝐢𝐭𝐡 𝐜𝐡𝐨𝐩𝐩𝐞𝐝 𝐧𝐮𝐭𝐬 𝐥𝐢𝐤𝐞 𝐚𝐥𝐦𝐨𝐧𝐝𝐬 𝐨𝐫 𝐩𝐢𝐬𝐭𝐚𝐜𝐡𝐢𝐨𝐬. 𝐓𝐡𝐞 𝐫𝐞𝐬𝐮𝐥𝐭 𝐢𝐬 𝐚 𝐫𝐢𝐜𝐡, 𝐜𝐫𝐞𝐚𝐦𝐲 𝐭𝐫𝐞𝐚𝐭 𝐰𝐢𝐭𝐡 𝐚 𝐡𝐢𝐧𝐭 𝐨𝐟
+    𝐬𝐩𝐢𝐜𝐞 𝐭𝐡𝐚𝐭 𝐩𝐞𝐫𝐟𝐞𝐜𝐭𝐥𝐲 𝐛𝐚𝐥𝐚𝐧𝐜𝐞𝐬 𝐭𝐡𝐞 𝐬𝐰𝐞𝐞𝐭𝐧𝐞𝐬𝐬. 𝐊𝐚𝐥𝐚𝐤𝐚𝐧𝐝 𝐢𝐬 𝐞𝐧𝐣𝐨𝐲𝐞𝐝 𝐲𝐞𝐚𝐫-𝐫𝐨𝐮𝐧𝐝 𝐛𝐮𝐭 𝐡𝐨𝐥𝐝𝐬 𝐩𝐚𝐫𝐭𝐢𝐜𝐮𝐥𝐚𝐫 𝐬𝐢𝐠𝐧𝐢𝐟𝐢𝐜𝐚𝐧𝐜𝐞 𝐝𝐮𝐫𝐢𝐧𝐠
+    𝐟𝐞𝐬𝐭𝐢𝐯𝐚𝐥𝐬 𝐥𝐢𝐤𝐞 𝐃𝐢𝐰𝐚𝐥𝐢 𝐚𝐧𝐝 𝐇𝐨𝐥𝐢, 𝐰𝐡𝐞𝐫𝐞 𝐢𝐭 𝐢𝐬 𝐞𝐱𝐜𝐡𝐚𝐧𝐠𝐞𝐝 𝐚𝐬 𝐚 𝐬𝐲𝐦𝐛𝐨𝐥 𝐨𝐟 𝐣𝐨𝐲 𝐚𝐧𝐝 𝐩𝐫𝐨𝐬𝐩𝐞𝐫𝐢𝐭𝐲. ❀ꗥ～ꗥ❀.</p>
+<h2 style="text-align:center">Order Now</h2>
+  <form action="bproducts" method="post" class="order-form">
+           {% csrf_token %}
+    <label for="product" class="form-label">Select Product:</label>
+  <select id="product" name="product" required class="form-input">
+    <option value="product1" selected >INFANT FOOD</option>
+    <option value="product2">CHOCLATES</option>
+    <option value="product3">SWEETS</option>
+    <option value="product4">CHOCLATES</option>
+    <option value="product5">MILK-UHT</option>
+    <option value="product6">WHIPPING CREAM</option>
+    <option value="product7">MILK POWDERS</option>
+    <option value="product8">GHEE</option>
+    <option value="product9">BEVERAGES</option>
+  </select><br>
+
+  <label for="quantity" class="form-label">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" required class="form-input"><br>
+
+  <label for="name" class="form-label">Customer Name:</label>
+  <input type="text" id="name" name="name" required class="form-input"><br>
+
+  <label for="address" class="form-label">Address:</label>
+  <textarea id="address" name="address" rows="4" cols="50" required class="form-input"></textarea><br>
+
+  <label for="phone" class="form-label">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required class="form-input"><br>
+
+  <button type="submit" class="submit-button">Submit Order</button>
+</form>
+
+</body>
+{% endblock %}
+</html>

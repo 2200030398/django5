@@ -1,0 +1,111 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INFANT FOOD</title>
+    <style>
+        .infant-product {
+            width: 200%;
+            max-width: 700px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50px;
+        }
+        .infant-text {
+            margin-top: 10px;
+            color: black;
+        }
+        body {
+            background-image: url("{% static 'back1.jpg' %}");
+            background-size: cover;
+            background-position: center;
+        }
+        .order-form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 10px;
+            color: black;
+            font-weight: bold;
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+  <h1 style="text-align:center">INFANT FOOD</h1>
+  <img src="{% static 'product1.1.jpg'%}" class="infant-product">
+  <p class="infant-text">
+    Infant food refers to specially formulated nutrition designed to meet the unique dietary needs of infants,
+    typically ranging from birth to 12 months of age. This crucial stage of development necessitates a carefully
+    balanced diet to support rapid growth, cognitive development, and overall health. Infant foods often come
+    in various forms, including breast milk, infant formula, and complementary foods introduced when the baby
+    begins to transition to solid foods. Breast milk is widely regarded as the optimal source of nutrition for infants
+    due to its unparalleled blend of nutrients and protective antibodies, promoting immune system development and
+    reducing the risk of infections. For infants who cannot be breastfed, infant formulas serve as a viable alternative,
+    meticulously engineered to mimic the composition of breast milk. As infants grow, the introduction of complementary
+    foods rich in essential nutrients further supports their nutritional requirements. However, it's crucial to approach
+    infant feeding with careful consideration of individual dietary needs, developmental milestones, and guidance from
+    healthcare professionals to ensure optimal growth and development during this critical stage of life.
+  </p>
+
+  <h2 style="text-align:center">Order Now</h2>
+  <form action="bproducts" method="post" class="order-form">
+           {% csrf_token %}
+    <label for="product" class="form-label">Select Product:</label>
+  <select id="product" name="product" required class="form-input">
+    <option value="product1" selected >INFANT FOOD</option>
+    <option value="product2">CHOCLATES</option>
+    <option value="product3">SWEETS</option>
+    <option value="product4">CHOCLATES</option>
+    <option value="product5">MILK-UHT</option>
+    <option value="product6">WHIPPING CREAM</option>
+    <option value="product7">MILK POWDERS</option>
+    <option value="product8">GHEE</option>
+    <option value="product9">BEVERAGES</option>
+  </select><br>
+
+  <label for="quantity" class="form-label">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" required class="form-input"><br>
+
+  <label for="name" class="form-label">Customer Name:</label>
+  <input type="text" id="name" name="name" required class="form-input"><br>
+
+  <label for="address" class="form-label">Address:</label>
+  <textarea id="address" name="address" rows="4" cols="50" required class="form-input"></textarea><br>
+
+  <label for="phone" class="form-label">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required class="form-input"><br>
+
+  <button type="submit" class="submit-button">Submit Order</button>
+</form>
+
+</body>
+{% endblock %}
+</html>

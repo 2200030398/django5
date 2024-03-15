@@ -1,0 +1,117 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INFANT FOOD</title>
+    <style>
+         .product1 {
+            width: 200%;
+            max-width: 700px; /* Set a maximum width to maintain image quality */
+            display: block; /* Ensures image behaves as a block element */
+            margin: 0 auto; /* Centers the image horizontally */
+            border-radius:50px;
+
+        }
+         p {
+         margin-top:10px;
+            color: black; /* You can replace "blue" with any other color you prefer */
+        }
+         body {
+            background-image: url("{% static 'back2.jpg' %}");
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+        }
+        /* Form styling */
+.order-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+ <h1 style="text-align:center">CHOCLATES </h1>
+<img src="{% static 'product2.1.jpg'%}" class="product1">
+<p> 𝕮𝖍𝖔𝖈𝖔𝖑𝖆𝖙𝖊 𝖒𝖆𝖉𝖊 𝖜𝖎𝖙𝖍 𝖈𝖔𝖜'𝖘 𝖒𝖎𝖑𝖐 𝖎𝖘 𝖆 𝖉𝖊𝖑𝖊𝖈𝖙𝖆𝖇𝖑𝖊 𝖙𝖗𝖊𝖆𝖙 𝖊𝖓𝖏𝖔𝖞𝖊𝖉 𝖇𝖞 𝖒𝖆𝖓𝖞 𝖆𝖗𝖔𝖚𝖓𝖉 𝖙𝖍𝖊 𝖜𝖔𝖗𝖑𝖉.
+    𝕿𝖍𝖊 𝖆𝖉𝖉𝖎𝖙𝖎𝖔𝖓 𝖔𝖋 𝖈𝖔𝖜'𝖘 𝖒𝖎𝖑𝖐 𝖙𝖔 𝖈𝖍𝖔𝖈𝖔𝖑𝖆𝖙𝖊 𝖓𝖔𝖙 𝖔𝖓𝖑𝖞 𝖊𝖓𝖍𝖆𝖓𝖈𝖊𝖘 𝖎𝖙𝖘 𝖈𝖗𝖊𝖆𝖒𝖞 𝖙𝖊𝖝𝖙𝖚𝖗𝖊 𝖇𝖚𝖙 𝖆𝖑𝖘𝖔 𝖕𝖗𝖔𝖛𝖎𝖉𝖊𝖘
+    𝖆 𝖗𝖎𝖈𝖍 𝖆𝖓𝖉 𝖎𝖓𝖉𝖚𝖑𝖌𝖊𝖓𝖙 𝖋𝖑𝖆𝖛𝖔𝖗 𝖕𝖗𝖔𝖋𝖎𝖑𝖊. 𝕿𝖍𝖎𝖘 𝖈𝖔𝖒𝖇𝖎𝖓𝖆𝖙𝖎𝖔𝖓 𝖗𝖊𝖘𝖚𝖑𝖙𝖘 𝖎𝖓 𝖆 𝖑𝖚𝖝𝖚𝖗𝖎𝖔𝖚𝖘 𝖆𝖓𝖉 𝖘𝖒𝖔𝖔𝖙𝖍 𝖈𝖍𝖔𝖈𝖔𝖑𝖆𝖙𝖊
+    𝖊𝖝𝖕𝖊𝖗𝖎𝖊𝖓𝖈𝖊 𝖙𝖍𝖆𝖙 𝖒𝖊𝖑𝖙𝖘 𝖊𝖋𝖋𝖔𝖗𝖙𝖑𝖊𝖘𝖘𝖑𝖞 𝖔𝖓 𝖙𝖍𝖊 𝖕𝖆𝖑𝖆𝖙𝖊, 𝖗𝖊𝖑𝖊𝖆𝖘𝖎𝖓𝖌 𝖆 𝖈𝖆𝖘𝖈𝖆𝖉𝖊 𝖔𝖋 𝖈𝖔𝖈𝖔𝖆 𝖌𝖔𝖔𝖉𝖓𝖊𝖘𝖘 𝖈𝖔𝖒𝖕𝖑𝖊𝖒𝖊𝖓𝖙𝖊𝖉
+    𝖇𝖞 𝖙𝖍𝖊 𝖘𝖚𝖇𝖙𝖑𝖊 𝖘𝖜𝖊𝖊𝖙𝖓𝖊𝖘𝖘 𝖔𝖋 𝖒𝖎𝖑𝖐. 𝖂𝖍𝖊𝖙𝖍𝖊𝖗 𝖎𝖓 𝖙𝖍𝖊 𝖋𝖔𝖗𝖒 𝖔𝖋 𝖇𝖆𝖗𝖘, 𝖙𝖗𝖚𝖋𝖋𝖑𝖊𝖘, 𝖔𝖗 𝖕𝖗𝖆𝖑𝖎𝖓𝖊𝖘, 𝖈𝖍𝖔𝖈𝖔𝖑𝖆𝖙𝖊𝖘 𝖒𝖆𝖉𝖊 𝖜𝖎𝖙𝖍
+    𝖈𝖔𝖜'𝖘 𝖒𝖎𝖑𝖐 𝖔𝖋𝖋𝖊𝖗 𝖆 𝖉𝖊𝖑𝖎𝖌𝖍𝖙𝖋𝖚𝖑 𝖇𝖆𝖑𝖆𝖓𝖈𝖊 𝖔𝖋 𝖘𝖜𝖊𝖊𝖙𝖓𝖊𝖘𝖘 𝖆𝖓𝖉 𝖈𝖗𝖊𝖆𝖒𝖎𝖓𝖊𝖘𝖘, 𝖒𝖆𝖐𝖎𝖓𝖌 𝖙𝖍𝖊𝖒 𝖆 𝖇𝖊𝖑𝖔𝖛𝖊𝖉 𝖈𝖍𝖔𝖎𝖈𝖊 𝖋𝖔𝖗 𝖈𝖍𝖔𝖈𝖔𝖑𝖆𝖙𝖊
+    𝖊𝖓𝖙𝖍𝖚𝖘𝖎𝖆𝖘𝖙𝖘 𝖊𝖛𝖊𝖗𝖞𝖜𝖍𝖊𝖗𝖊.𝕱𝖚𝖗𝖙𝖍𝖊𝖗𝖒𝖔𝖗𝖊, 𝖙𝖍𝖊 𝖚𝖘𝖊 𝖔𝖋 𝖈𝖔𝖜'𝖘 𝖒𝖎𝖑𝖐 𝖎𝖓 𝖈𝖍𝖔𝖈𝖔𝖑𝖆𝖙𝖊 𝖕𝖗𝖔𝖉𝖚𝖈𝖙𝖎𝖔𝖓 𝖆𝖉𝖉𝖘 𝖓𝖚𝖙𝖗𝖎𝖙𝖎𝖔𝖓𝖆𝖑 𝖛𝖆𝖑𝖚𝖊, 𝖆𝖘 𝖎𝖙
+    𝖈𝖔𝖓𝖙𝖆𝖎𝖓𝖘 𝖊𝖘𝖘𝖊𝖓𝖙𝖎𝖆𝖑 𝖛𝖎𝖙𝖆𝖒𝖎𝖓𝖘 𝖆𝖓𝖉 𝖒𝖎𝖓𝖊𝖗𝖆𝖑𝖘 𝖘𝖚𝖈𝖍 𝖆𝖘 𝖈𝖆𝖑𝖈𝖎𝖚𝖒, 𝖕𝖔𝖙𝖆𝖘𝖘𝖎𝖚𝖒, 𝖆𝖓𝖉 𝖛𝖎𝖙𝖆𝖒𝖎𝖓 𝕯, 𝖈𝖔𝖓𝖙𝖗𝖎𝖇𝖚𝖙𝖎𝖓𝖌 𝖙𝖔 𝖔𝖛𝖊𝖗𝖆𝖑𝖑 𝖜𝖊𝖑𝖑-𝖇𝖊𝖎𝖓𝖌.
+    𝕬𝖉𝖉𝖎𝖙𝖎𝖔𝖓𝖆𝖑𝖑𝖞, 𝖙𝖍𝖊 𝖈𝖗𝖊𝖆𝖒𝖞 𝖙𝖊𝖝𝖙𝖚𝖗𝖊 𝖔𝖋 𝖈𝖔𝖜'𝖘 𝖒𝖎𝖑𝖐 𝖈𝖍𝖔𝖈𝖔𝖑𝖆𝖙𝖊 𝖒𝖆𝖐𝖊𝖘 𝖎𝖙 𝖆𝖓 𝖎𝖉𝖊𝖆𝖑 𝖎𝖓𝖌𝖗𝖊𝖉𝖎𝖊𝖓𝖙 𝖋𝖔𝖗 𝖛𝖆𝖗𝖎𝖔𝖚𝖘 𝖈𝖔𝖓𝖋𝖊𝖈𝖙𝖎𝖔𝖓𝖘, 𝖋𝖗𝖔𝖒 𝖈𝖑𝖆𝖘𝖘𝖎𝖈
+    𝖈𝖍𝖔𝖈𝖔𝖑𝖆𝖙𝖊 𝖇𝖆𝖗𝖘 𝖙𝖔 𝖉𝖊𝖈𝖆𝖉𝖊𝖓𝖙 𝖉𝖊𝖘𝖘𝖊𝖗𝖙𝖘 𝖑𝖎𝖐𝖊 𝖒𝖔𝖚𝖘𝖘𝖊𝖘 𝖆𝖓𝖉 𝖌𝖆𝖓𝖆𝖈𝖍𝖊𝖘. 𝕿𝖍𝖊 𝖛𝖊𝖗𝖘𝖆𝖙𝖎𝖑𝖎𝖙𝖞 𝖔𝖋 𝖈𝖔𝖜'𝖘 𝖒𝖎𝖑𝖐 𝖈𝖍𝖔𝖈𝖔𝖑𝖆𝖙𝖊 𝖆𝖑𝖑𝖔𝖜𝖘 𝖋𝖔𝖗 𝖊𝖓𝖉𝖑𝖊𝖘𝖘
+    𝖈𝖗𝖊𝖆𝖙𝖎𝖛𝖎𝖙𝖞 𝖎𝖓 𝖈𝖚𝖑𝖎𝖓𝖆𝖗𝖞 𝖊𝖓𝖉𝖊𝖆𝖛𝖔𝖗𝖘, 𝖜𝖍𝖊𝖙𝖍𝖊𝖗 𝖊𝖓𝖏𝖔𝖞𝖊𝖉 𝖆𝖘 𝖆 𝖘𝖙𝖆𝖓𝖉𝖆𝖑𝖔𝖓𝖊 𝖙𝖗𝖊𝖆𝖙 𝖔𝖗 𝖎𝖓𝖈𝖔𝖗𝖕𝖔𝖗𝖆𝖙𝖊𝖉 𝖎𝖓𝖙𝖔 𝖊𝖑𝖆𝖇𝖔𝖗𝖆𝖙𝖊 𝖗𝖊𝖈𝖎𝖕𝖊𝖘. 𝕴𝖙𝖘 𝖜𝖎𝖉𝖊𝖘𝖕𝖗𝖊𝖆𝖉
+    𝖕𝖔𝖕𝖚𝖑𝖆𝖗𝖎𝖙𝖞 𝖆𝖓𝖉 𝖚𝖓𝖎𝖛𝖊𝖗𝖘𝖆𝖑 𝖆𝖕𝖕𝖊𝖆𝖑 𝖒𝖆𝖐𝖊 𝖈𝖔𝖜'𝖘 𝖒𝖎𝖑𝖐 𝖈𝖍𝖔𝖈𝖔𝖑𝖆𝖙𝖊 𝖆 𝖙𝖎𝖒𝖊𝖑𝖊𝖘𝖘 𝖋𝖆𝖛𝖔𝖗𝖎𝖙𝖊, 𝖕𝖊𝖗𝖋𝖊𝖈𝖙 𝖋𝖔𝖗 𝖘𝖆𝖙𝖎𝖘𝖋𝖞𝖎𝖓𝖌 𝖈𝖗𝖆𝖛𝖎𝖓𝖌𝖘 𝖆𝖓𝖉 𝖈𝖊𝖑𝖊𝖇𝖗𝖆𝖙𝖎𝖓𝖌
+    𝖘𝖕𝖊𝖈𝖎𝖆𝖑 𝖒𝖔𝖒𝖊𝖓𝖙𝖘 𝖜𝖎𝖙𝖍 𝖎𝖙𝖘 𝖎𝖗𝖗𝖊𝖘𝖎𝖘𝖙𝖎𝖇𝖑𝖊 𝖋𝖑𝖆𝖛𝖔𝖗 𝖆𝖓𝖉 𝖘𝖒𝖔𝖔𝖙𝖍 𝖈𝖔𝖓𝖘𝖎𝖘𝖙𝖊𝖓𝖈𝖞..</p>
+ <h2 style="text-align:center">Order Now</h2>
+  <form action="bproducts" method="post" class="order-form">
+           {% csrf_token %}
+    <label for="product" class="form-label">Select Product:</label>
+  <select id="product" name="product" required class="form-input">
+    <option value="product1" selected >INFANT FOOD</option>
+    <option value="product2">CHOCLATES</option>
+    <option value="product3">SWEETS</option>
+    <option value="product4">CHOCLATES</option>
+    <option value="product5">MILK-UHT</option>
+    <option value="product6">WHIPPING CREAM</option>
+    <option value="product7">MILK POWDERS</option>
+    <option value="product8">GHEE</option>
+    <option value="product9">BEVERAGES</option>
+  </select><br>
+
+  <label for="quantity" class="form-label">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" required class="form-input"><br>
+
+  <label for="name" class="form-label">Customer Name:</label>
+  <input type="text" id="name" name="name" required class="form-input"><br>
+
+  <label for="address" class="form-label">Address:</label>
+  <textarea id="address" name="address" rows="4" cols="50" required class="form-input"></textarea><br>
+
+  <label for="phone" class="form-label">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required class="form-input"><br>
+
+  <button type="submit" class="submit-button">Submit Order</button>
+</form>
+
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,112 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INFANT FOOD</title>
+    <style>
+         .product1 {
+            width: 100%;
+            max-width: 500px; /* Set a maximum width to maintain image quality */
+            display: block; /* Ensures image behaves as a block element */
+            margin: 0 auto; /* Centers the image horizontally */
+            border-radius:50px;
+
+        }
+         p {
+         margin-top:10px;
+            color: black; /* You can replace "blue" with any other color you prefer */
+        }
+         body {
+            background-image: url("{% static 'back7.jpg' %}");
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+        }
+        /* Form styling */
+.order-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+ <h1 style="text-align:center">𝗚𝗵𝗲𝗲</h1>G
+<img src="{% static 'product7.1.jpg'%}" class="product1">
+<p> 𝙶𝚒𝚛 𝚌𝚘𝚠 𝚐𝚑𝚎𝚎 𝚒𝚜 𝚊 𝚙𝚛𝚒𝚣𝚎𝚍 𝚍𝚊𝚒𝚛𝚢 𝚙𝚛𝚘𝚍𝚞𝚌𝚝 𝚘𝚛𝚒𝚐𝚒𝚗𝚊𝚝𝚒𝚗𝚐 𝚏𝚛𝚘𝚖 𝚝𝚑𝚎 𝙶𝚒𝚛 𝚋𝚛𝚎𝚎𝚍 𝚘𝚏 𝚌𝚘𝚠𝚜, 𝚠𝚑𝚒𝚌𝚑 𝚊𝚛𝚎 𝚗𝚊𝚝𝚒𝚟𝚎 𝚝𝚘 𝚝𝚑𝚎
+    𝙶𝚒𝚛 𝚏𝚘𝚛𝚎𝚜𝚝 𝚛𝚎𝚐𝚒𝚘𝚗 𝚒𝚗 𝙶𝚞𝚓𝚊𝚛𝚊𝚝, 𝙸𝚗𝚍𝚒𝚊. 𝚁𝚎𝚗𝚘𝚠𝚗𝚎𝚍 𝚏𝚘𝚛 𝚒𝚝𝚜 𝚛𝚒𝚌𝚑 𝚏𝚕𝚊𝚟𝚘𝚛 𝚊𝚗𝚍 𝚗𝚞𝚝𝚛𝚒𝚝𝚒𝚘𝚗𝚊𝚕 𝚋𝚎𝚗𝚎𝚏𝚒𝚝𝚜, 𝙶𝚒𝚛 𝚌𝚘𝚠 𝚐𝚑𝚎𝚎
+    𝚒𝚜 𝚖𝚊𝚍𝚎 𝚋𝚢 𝚜𝚒𝚖𝚖𝚎𝚛𝚒𝚗𝚐 𝚝𝚑𝚎 𝚖𝚒𝚕𝚔 𝚘𝚏 𝙶𝚒𝚛 𝚌𝚘𝚠𝚜 𝚞𝚗𝚝𝚒𝚕 𝚝𝚑𝚎 𝚠𝚊𝚝𝚎𝚛 𝚌𝚘𝚗𝚝𝚎𝚗𝚝 𝚎𝚟𝚊𝚙𝚘𝚛𝚊𝚝𝚎𝚜 𝚊𝚗𝚍 𝚝𝚑𝚎 𝚖𝚒𝚕𝚔 𝚜𝚘𝚕𝚒𝚍𝚜 𝚌𝚊𝚛𝚊𝚖𝚎𝚕𝚒𝚣𝚎,
+    𝚕𝚎𝚊𝚟𝚒𝚗𝚐 𝚋𝚎𝚑𝚒𝚗𝚍 𝚙𝚞𝚛𝚎, 𝚌𝚕𝚊𝚛𝚒𝚏𝚒𝚎𝚍 𝚋𝚞𝚝𝚝𝚎𝚛. 𝚃𝚑𝚒𝚜 𝚝𝚛𝚊𝚍𝚒𝚝𝚒𝚘𝚗𝚊𝚕 𝚖𝚎𝚝𝚑𝚘𝚍 𝚘𝚏 𝚙𝚛𝚎𝚙𝚊𝚛𝚊𝚝𝚒𝚘𝚗 𝚛𝚎𝚜𝚞𝚕𝚝𝚜 𝚒𝚗 𝚊 𝚐𝚘𝚕𝚍𝚎𝚗-𝚑𝚞𝚎𝚍 𝚐𝚑𝚎𝚎
+    𝚠𝚒𝚝𝚑 𝚊 𝚍𝚒𝚜𝚝𝚒𝚗𝚌𝚝𝚒𝚟𝚎 𝚊𝚛𝚘𝚖𝚊 𝚊𝚗𝚍 𝚊 𝚍𝚎𝚕𝚒𝚌𝚒𝚘𝚞𝚜𝚕𝚢 𝚗𝚞𝚝𝚝𝚢 𝚏𝚕𝚊𝚟𝚘𝚛. 𝙱𝚎𝚢𝚘𝚗𝚍 𝚒𝚝𝚜 𝚌𝚞𝚕𝚒𝚗𝚊𝚛𝚢 𝚊𝚙𝚙𝚎𝚊𝚕, 𝙶𝚒𝚛 𝚌𝚘𝚠 𝚐𝚑𝚎𝚎 𝚒𝚜 𝚑𝚒𝚐𝚑𝚕𝚢
+    𝚟𝚊𝚕𝚞𝚎𝚍 𝚒𝚗 𝙰𝚢𝚞𝚛𝚟𝚎𝚍𝚒𝚌 𝚖𝚎𝚍𝚒𝚌𝚒𝚗𝚎 𝚏𝚘𝚛 𝚒𝚝𝚜 𝚙𝚞𝚛𝚙𝚘𝚛𝚝𝚎𝚍 𝚑𝚎𝚊𝚕𝚝𝚑-𝚙𝚛𝚘𝚖𝚘𝚝𝚒𝚗𝚐 𝚙𝚛𝚘𝚙𝚎𝚛𝚝𝚒𝚎𝚜, 𝚋𝚎𝚕𝚒𝚎𝚟𝚎𝚍 𝚝𝚘 𝚊𝚒𝚍 𝚍𝚒𝚐𝚎𝚜𝚝𝚒𝚘𝚗, 𝚋𝚘𝚘𝚜𝚝
+    𝚒𝚖𝚖𝚞𝚗𝚒𝚝𝚢, 𝚊𝚗𝚍 𝚙𝚛𝚘𝚖𝚘𝚝𝚎 𝚘𝚟𝚎𝚛𝚊𝚕𝚕 𝚠𝚎𝚕𝚕-𝚋𝚎𝚒𝚗𝚐. 𝚆𝚒𝚝𝚑 𝚒𝚝𝚜 𝚞𝚗𝚒𝚚𝚞𝚎 𝚝𝚊𝚜𝚝𝚎 𝚊𝚗𝚍 𝚙𝚘𝚝𝚎𝚗𝚝𝚒𝚊𝚕 𝚑𝚎𝚊𝚕𝚝𝚑 𝚋𝚎𝚗𝚎𝚏𝚒𝚝𝚜, 𝙶𝚒𝚛 𝚌𝚘𝚠 𝚐𝚑𝚎𝚎 𝚑𝚘𝚕𝚍𝚜
+    𝚊 𝚜𝚙𝚎𝚌𝚒𝚊𝚕 𝚙𝚕𝚊𝚌𝚎 𝚒𝚗 𝙸𝚗𝚍𝚒𝚊𝚗 𝚌𝚞𝚒𝚜𝚒𝚗𝚎 𝚊𝚗𝚍 𝚌𝚞𝚕𝚝𝚞𝚛𝚎, 𝚛𝚎𝚟𝚎𝚛𝚎𝚍 𝚊𝚜 𝚊 𝚜𝚢𝚖𝚋𝚘𝚕 𝚘𝚏 𝚙𝚞𝚛𝚒𝚝𝚢 𝚊𝚗𝚍 𝚗𝚘𝚞𝚛𝚒𝚜𝚑𝚖𝚎𝚗𝚝..</p>
+<h2 style="text-align:center">Order Now</h2>
+<form action="bproducts" method="post" class="order-form">
+           {% csrf_token %}
+    <label for="product" class="form-label">Select Product:</label>
+  <select id="product" name="product" required class="form-input">
+    <option value="product1" selected >INFANT FOOD</option>
+    <option value="product2">CHOCLATES</option>
+    <option value="product3">SWEETS</option>
+    <option value="product4">CHOCLATES</option>
+    <option value="product5">MILK-UHT</option>
+    <option value="product6">WHIPPING CREAM</option>
+    <option value="product7">MILK POWDERS</option>
+    <option value="product8">GHEE</option>
+    <option value="product9">BEVERAGES</option>
+  </select><br>
+
+  <label for="quantity" class="form-label">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" required class="form-input"><br>
+
+  <label for="name" class="form-label">Customer Name:</label>
+  <input type="text" id="name" name="name" required class="form-input"><br>
+
+  <label for="address" class="form-label">Address:</label>
+  <textarea id="address" name="address" rows="4" cols="50" required class="form-input"></textarea><br>
+
+  <label for="phone" class="form-label">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required class="form-input"><br>
+
+  <button type="submit" class="submit-button">Submit Order</button>
+</form>
+
+</body>
+{% endblock %}
+</html>

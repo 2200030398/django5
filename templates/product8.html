@@ -1,0 +1,114 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INFANT FOOD</title>
+    <style>
+         .product1 {
+            width: 200%;
+            max-width: 700px; /* Set a maximum width to maintain image quality */
+            display: block; /* Ensures image behaves as a block element */
+            margin: 0 auto; /* Centers the image horizontally */
+            border-radius:50px;
+
+        }
+         p {
+         margin-top:10px;
+            color: RGB(255, 255, 0); /* You can replace "blue" with any other color you prefer */
+        }
+         body {
+            background-image: url("{% static 'back8.jpg' %}");
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+        }
+        /* Form styling */
+.order-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+ <h1 style="text-align:center">BEVERAGES </h1>
+<img src="{% static 'product8.1.jpg'%}" class="product1">
+<p>𝙱𝚎𝚟𝚎𝚛𝚊𝚐𝚎𝚜 𝚘𝚋𝚝𝚊𝚒𝚗𝚎𝚍 𝚗𝚊𝚝𝚞𝚛𝚊𝚕𝚕𝚢, 𝚘𝚏𝚝𝚎𝚗 𝚌𝚎𝚕𝚎𝚋𝚛𝚊𝚝𝚎𝚍 𝚏𝚘𝚛 𝚝𝚑𝚎𝚒𝚛 𝚙𝚞𝚛𝚒𝚝𝚢 𝚊𝚗𝚍 𝚜𝚒𝚖𝚙𝚕𝚒𝚌𝚒𝚝𝚢, 𝚎𝚗𝚌𝚘𝚖𝚙𝚊𝚜𝚜 𝚊 𝚛𝚒𝚌𝚑 𝚝𝚊𝚙𝚎𝚜𝚝𝚛𝚢
+    𝚘𝚏 𝚏𝚕𝚊𝚟𝚘𝚛𝚜 𝚊𝚗𝚍 𝚌𝚞𝚕𝚝𝚞𝚛𝚊𝚕 𝚜𝚒𝚐𝚗𝚒𝚏𝚒𝚌𝚊𝚗𝚌𝚎. 𝙵𝚛𝚘𝚖 𝚝𝚑𝚎 𝚌𝚛𝚒𝚜𝚙 𝚜𝚠𝚎𝚎𝚝𝚗𝚎𝚜𝚜 𝚘𝚏 𝚏𝚛𝚎𝚜𝚑𝚕𝚢 𝚜𝚚𝚞𝚎𝚎𝚣𝚎𝚍 𝚏𝚛𝚞𝚒𝚝 𝚓𝚞𝚒𝚌𝚎𝚜 𝚝𝚘 𝚝𝚑𝚎
+    𝚌𝚘𝚖𝚏𝚘𝚛𝚝𝚒𝚗𝚐 𝚠𝚊𝚛𝚖𝚝𝚑 𝚘𝚏 𝚑𝚎𝚛𝚋𝚊𝚕 𝚝𝚎𝚊𝚜 𝚋𝚛𝚎𝚠𝚎𝚍 𝚏𝚛𝚘𝚖 𝚑𝚊𝚗𝚍-𝚙𝚒𝚌𝚔𝚎𝚍 𝚕𝚎𝚊𝚟𝚎𝚜, 𝚝𝚑𝚎𝚜𝚎 𝚕𝚒𝚋𝚊𝚝𝚒𝚘𝚗𝚜 𝚛𝚎𝚏𝚕𝚎𝚌𝚝 𝚝𝚑𝚎 𝚋𝚘𝚞𝚗𝚝𝚢 𝚘𝚏
+    𝚗𝚊𝚝𝚞𝚛𝚎'𝚜 𝚘𝚏𝚏𝚎𝚛𝚒𝚗𝚐𝚜. 𝚃𝚑𝚎 𝚎𝚏𝚏𝚎𝚛𝚟𝚎𝚜𝚌𝚎𝚗𝚝 𝚝𝚊𝚗𝚐 𝚘𝚏 𝚔𝚘𝚖𝚋𝚞𝚌𝚑𝚊, 𝚌𝚛𝚊𝚏𝚝𝚎𝚍 𝚝𝚑𝚛𝚘𝚞𝚐𝚑 𝚝𝚑𝚎 𝚏𝚎𝚛𝚖𝚎𝚗𝚝𝚊𝚝𝚒𝚘𝚗 𝚘𝚏 𝚝𝚎𝚊 𝚊𝚗𝚍
+    𝚜𝚢𝚖𝚋𝚒𝚘𝚝𝚒𝚌 𝚌𝚞𝚕𝚝𝚞𝚛𝚎𝚜, 𝚎𝚖𝚋𝚘𝚍𝚒𝚎𝚜 𝚋𝚘𝚝𝚑 𝚝𝚛𝚊𝚍𝚒𝚝𝚒𝚘𝚗 𝚊𝚗𝚍 𝚒𝚗𝚗𝚘𝚟𝚊𝚝𝚒𝚘𝚗. 𝙼𝚎𝚊𝚗𝚠𝚑𝚒𝚕𝚎, 𝚝𝚑𝚎 𝚎𝚊𝚛𝚝𝚑𝚢 𝚛𝚒𝚌𝚑𝚗𝚎𝚜𝚜 𝚘𝚏 𝚌𝚘𝚏𝚏𝚎𝚎,
+    𝚍𝚎𝚛𝚒𝚟𝚎𝚍 𝚏𝚛𝚘𝚖 𝚌𝚊𝚛𝚎𝚏𝚞𝚕𝚕𝚢 𝚛𝚘𝚊𝚜𝚝𝚎𝚍 𝚋𝚎𝚊𝚗𝚜 𝚌𝚞𝚕𝚝𝚒𝚟𝚊𝚝𝚎𝚍 𝚒𝚗 𝚕𝚞𝚜𝚑 𝚖𝚘𝚞𝚗𝚝𝚊𝚒𝚗 𝚛𝚎𝚐𝚒𝚘𝚗𝚜, 𝚜𝚎𝚛𝚟𝚎𝚜 𝚊𝚜 𝚊 𝚝𝚎𝚜𝚝𝚊𝚖𝚎𝚗𝚝 𝚝𝚘 𝚝𝚑𝚎
+    𝚊𝚛𝚝𝚒𝚜𝚝𝚛𝚢 𝚘𝚏 𝚌𝚞𝚕𝚝𝚒𝚟𝚊𝚝𝚒𝚘𝚗 𝚊𝚗𝚍 𝚙𝚛𝚎𝚙𝚊𝚛𝚊𝚝𝚒𝚘𝚗. 𝚆𝚑𝚎𝚝𝚑𝚎𝚛 𝚎𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝚏𝚛𝚘𝚖 𝚏𝚛𝚞𝚒𝚝𝚜, 𝚑𝚎𝚛𝚋𝚜, 𝚘𝚛 𝚐𝚛𝚊𝚒𝚗𝚜, 𝚗𝚊𝚝𝚞𝚛𝚊𝚕
+    𝚋𝚎𝚟𝚎𝚛𝚊𝚐𝚎𝚜 𝚗𝚘𝚝 𝚘𝚗𝚕𝚢 𝚝𝚊𝚗𝚝𝚊𝚕𝚒𝚣𝚎 𝚝𝚑𝚎 𝚙𝚊𝚕𝚊𝚝𝚎 𝚋𝚞𝚝 𝚊𝚕𝚜𝚘 𝚎𝚟𝚘𝚔𝚎 𝚊 𝚙𝚛𝚘𝚏𝚘𝚞𝚗𝚍 𝚌𝚘𝚗𝚗𝚎𝚌𝚝𝚒𝚘𝚗 𝚝𝚘 𝚝𝚑𝚎 𝚕𝚊𝚗𝚍𝚜𝚌𝚊𝚙𝚎𝚜 𝚏𝚛𝚘𝚖
+    𝚠𝚑𝚒𝚌𝚑 𝚝𝚑𝚎𝚢 𝚘𝚛𝚒𝚐𝚒𝚗𝚊𝚝𝚎, 𝚏𝚘𝚜𝚝𝚎𝚛𝚒𝚗𝚐 𝚊 𝚍𝚎𝚎𝚙 𝚊𝚙𝚙𝚛𝚎𝚌𝚒𝚊𝚝𝚒𝚘𝚗 𝚏𝚘𝚛 𝚝𝚑𝚎 𝚠𝚘𝚗𝚍𝚎𝚛𝚜 𝚘𝚏 𝚝𝚑𝚎 𝚗𝚊𝚝𝚞𝚛𝚊𝚕 𝚠𝚘𝚛𝚕𝚍..</p>
+<h2 style="text-align:center">Order Now</h2>
+<form action="#" method="post" class="order-form">
+           {% csrf_token %}
+    <label for="product" class="form-label">Select Product:</label>
+  <select id="product" name="product" required class="form-input">
+    <option value="product1" selected >INFANT FOOD</option>
+    <option value="product2">CHOCLATES</option>
+    <option value="product3">SWEETS</option>
+    <option value="product4">CHOCLATES</option>
+    <option value="product5">MILK-UHT</option>
+    <option value="product6">WHIPPING CREAM</option>
+    <option value="product7">MILK POWDERS</option>
+    <option value="product8">GHEE</option>
+    <option value="product9">BEVERAGES</option>
+  </select><br>
+
+  <label for="quantity" class="form-label">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" required class="form-input"><br>
+
+  <label for="name" class="form-label">Customer Name:</label>
+  <input type="text" id="name" name="name" required class="form-input"><br>
+
+  <label for="address" class="form-label">Address:</label>
+  <textarea id="address" name="address" rows="4" cols="50" required class="form-input"></textarea><br>
+
+  <label for="phone" class="form-label">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required class="form-input"><br>
+
+  <button type="submit" class="submit-button">Submit Order</button>
+</form>
+
+</body>
+</body>
+{% endblock %}
+</html>
